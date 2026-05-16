@@ -1,0 +1,74 @@
+\contentsline {section}{Documentacao do Ecossistema OpenCode}{5}{section*.2}%
+\contentsline {subsubsection}{1.3 Fluxo de Dados Principal}{8}{section*.3}%
+\contentsline {subsubsection}{1.4 Fundamentacao Teorica}{8}{section*.4}%
+\contentsline {subsection}{A classificacao editais-br, com 25 sub-dimensoes e 12 areas, fundamenta-se na taxonomia de fomento a pesquisa no Brasil conforme a Lei no 10.973/2004 (Lei da Inovacao) e a Lei no 13.243/2016 (Marco Legal da Ciencia, Tecnologia e Inovacao), que estabelecem os instrumentos de apoio a pesquisa e inovacao em ambito federal, estadual e setorial (Brasil, 2004; Brasil, 2016).}{11}{section*.5}%
+\contentsline {subsection}{2. Camadas do Ecossistema}{11}{section*.6}%
+\contentsline {subsubsection}{2.1 Nexus L0-L6: Orquestracao Multi-Agente}{11}{section*.7}%
+\contentsline {subsubsection}{2.2 Fundamentacao Teorica}{13}{section*.8}%
+\contentsline {subsection}{A L6 (Feedback \& Evolution) com 120 pontos de feedback e meta-aprendizado, fundamenta-se na aprendizagem por reforco (Sutton e Barto, 2018) e algoritmos evolutivos (Banzhaf et al., 1998), onde o sistema acumula conhecimento de ciclos anteriores para otimizar seu desempenho futuro. A simulacao de banca (SB) implementa revisao por pares simulada, metodologia validada no processo Qualis CAPES.}{15}{section*.9}%
+\contentsline {subsection}{3. Skills do Sistema}{15}{section*.10}%
+\contentsline {subsubsection}{3.1 Skills Nativas (9)}{15}{section*.11}%
+\contentsline {subsubsection}{3.2 CC-Skills Cross-Client (14)}{16}{section*.12}%
+\contentsline {subsubsection}{3.3 Fundamentacao Teorica}{17}{section*.13}%
+\contentsline {subsection}{O mecanismo de progressive disclosure (skill-progressive-disclosure-design) implementa o padrao de mesmo nome descrito por Lidwell et al.~(2010), onde informacao complexa e revelada progressivamente para otimizar o uso do espaco de contexto. Skills com mais de 2.5KB utilizam arquivos de referencia (references/) para armazenar detalhes operacionais, mantendo o SKILL.md focado em disparo e workflow principal.}{19}{section*.14}%
+\contentsline {subsection}{4. Agentes}{19}{section*.15}%
+\contentsline {subsubsection}{4.1 Catalogo de Agentes (58 definicoes)}{19}{section*.16}%
+\contentsline {subsubsection}{4.2 Fundamentacao Teorica}{22}{section*.17}%
+\contentsline {subsection}{O modelo de 58 agentes segue a lei de Conway (1968) adaptada para sistemas multiagente, onde a estrutura do sistema reflete a estrutura de comunicacao entre seus componentes. A distribuicao em 5 categorias (Core, Reversa, Workshop, Especializados, Gestao) otimiza a comunicacao intragrupo (alta coesao) e minimiza a comunicacao intergrupo (baixo acoplamento), principios fundamentais de engenharia de software (Pressman, 2014; Sommerville, 2015).}{24}{section*.18}%
+\contentsline {subsection}{5. MCPs}{24}{section*.19}%
+\contentsline {subsubsection}{5.1 Catalogo de MCPs (17 ativos)}{24}{section*.20}%
+\contentsline {subsubsection}{5.2 Matriz de Afinidade}{25}{section*.21}%
+\contentsline {subsubsection}{5.3 Fundamentacao Teorica}{26}{section*.22}%
+\contentsline {subsection}{A Matriz de Afinidade, com valores de 0.75 a 0.95, quantifica a forca relacional entre MCPs e agentes, seguindo a tecnica de analise de correlacao de Pearson adaptada para grafos bipartidos (Newman, 2010). A conexao mais forte (scihub-criador-artigo: 0.95) reflete a dependencia critica do pipeline MASWOS em relacao a fontes academicas, enquanto a conexao token-efficiency-corrector (0.95) destaca a importancia do corretor linguistico no fluxo de saida.}{28}{section*.23}%
+\contentsline {subsection}{6. Plugins (2 Orquestradores)}{28}{section*.24}%
+\contentsline {subsubsection}{6.1 ecosystem-sync.ts (v3.5.1) --- 8.8KB / 463 linhas}{28}{section*.25}%
+\contentsline {subsubsection}{6.2 manus-evolve.ts (v2.2) --- 7.5KB / 373 linhas}{32}{section*.26}%
+\contentsline {subsubsection}{6.3 Fundamentacao Teorica}{38}{section*.27}%
+\contentsline {subsection}{A geracao de skills em evolution/evo-*.md com frontmatter YAML padronizado permite que habilidades emergentes sejam persistidas e reutilizadas, seguindo o conceito de aprendizado lifelong (Thrun e Mitchell, 1995; Chen e Liu, 2018), onde conhecimento adquirido em tarefas anteriores e transferido para melhorar desempenho em tarefas futuras.}{40}{section*.28}%
+\contentsline {subsection}{7. SEEKER - Pipeline de pesquisa}{40}{section*.29}%
+\contentsline {subsubsection}{7.1 Pipeline Completo (12 agentes)}{40}{section*.30}%
+\contentsline {subsubsection}{7.2 Modulos Core}{41}{section*.31}%
+\contentsline {subsubsection}{7.3 integração SEEKER -\textgreater {} editais-br}{41}{section*.32}%
+\contentsline {subsubsection}{7.4 Fundamentacao Teorica}{42}{section*.33}%
+\contentsline {subsection}{A integracao SEEKER-editais-br via editais\_hook.py permite que resultados de pesquisa academica sejam diretamente vinculados a oportunidades de fomento, implementando o conceito de ciencia aberta e financiamento integrado (David, 2004; OECD, 2015).}{44}{section*.34}%
+\contentsline {subsection}{8. Criador de Artigo (MASWOS)}{44}{section*.35}%
+\contentsline {subsubsection}{8.1 Arquitetura MASWOS v4.2}{44}{section*.36}%
+\contentsline {subsubsection}{8.2 Fluxo do Loop de correção Iterativa}{45}{section*.37}%
+\contentsline {subsubsection}{8.3 Fundamentacao Teorica}{46}{section*.38}%
+\contentsline {subsection}{A exportacao para LaTeX, PDF e DOCX ABNT segue as normas NBR 14724 (2011) para apresentacao de trabalhos academicos, NBR 6023 (2018) para referencias e NBR 6028 (2018) para resumos. O template python-docx implementa programaticamente margens (3cm superior/esquerda, 2cm direita/inferior), fonte Times New Roman 12pt, espacamento 1.5 linhas e numeracao progressiva de secoes. A integracao com o ptbr\_corrector.py (359 linhas, 16 faixas Unicode CJK) garante saida em portugues brasileiro formal, atendendo aos requisitos do ecossistema v3.5 de token efficiency.}{48}{section*.39}%
+\contentsline {subsection}{9. Quantum Nexus PhD}{48}{section*.40}%
+\contentsline {subsubsection}{9.1 Estrutura dos Scripts}{48}{section*.41}%
+\contentsline {subsubsection}{9.2 Fundamentacao Teorica}{50}{section*.42}%
+\contentsline {subsection}{O processador quantico em Rust (quantum\_processor.rs) implementa simulacao eficiente de circuitos quanticos utilizando tecnicas de computacao paralela e algebra linear otimizada (Gray, 2018), aproveitando o zero-cost abstraction e memory safety da linguagem Rust (Klabnik e Nichols, 2018).}{52}{section*.43}%
+\contentsline {subsection}{10. Nexus Multi-Agentes}{52}{section*.44}%
+\contentsline {subsubsection}{10.1 Scripts de Orquestracao (40+)}{52}{section*.45}%
+\contentsline {subsubsection}{10.2 Pipeline de validação}{54}{section*.46}%
+\contentsline {subsubsection}{10.3 Fundamentacao Teorica}{55}{section*.47}%
+\contentsline {subsection}{A integracao com o ecossistema via ecosystem\_bridge.py, nexus\_integration.py e manus\_evolve\_bridge.py segue o padrao Bridge (Gamma et al., 1994), desacoplando a orquestracao Nexus dos componentes especificos que coordena.}{57}{section*.48}%
+\contentsline {subsection}{11. editais-br}{57}{section*.49}%
+\contentsline {subsubsection}{11.1 Arquitetura da Busca de Fomento}{57}{section*.50}%
+\contentsline {subsubsection}{11.2 Sistema de Scoring}{58}{section*.51}%
+\contentsline {subsubsection}{11.3 12 Areas de Classificacao}{59}{section*.52}%
+\contentsline {subsubsection}{11.4 Cobertura Geografica}{59}{section*.53}%
+\contentsline {subsubsection}{11.5 Fundamentacao Teorica}{61}{section*.54}%
+\contentsline {subsection}{O feedback loop via SQLite (--feedback flag) e treinamento (--treinar flag) implementa aprendizado continuo, onde pesos de classificacao sao ajustados conforme o usuario fornece feedback sobre resultados recomendados. Este mecanismo segue o paradigma de aprendizado por reforco (Sutton e Barto, 2018), onde recompensas (feedback positivo) e punicoes (feedback negativo) ajustam a politica de recomendacao.}{63}{section*.55}%
+\contentsline {subsection}{12. Evolucao e Auto-Cura}{63}{section*.56}%
+\contentsline {subsubsection}{12.1 Pipeline Nexus de Auto-Cura}{63}{section*.57}%
+\contentsline {subsubsection}{12.2 Dashboard do Ecossistema}{64}{section*.58}%
+\contentsline {subsubsection}{12.3 Ciclos de Evolucao}{65}{section*.59}%
+\contentsline {subsubsection}{12.4 Fundamentacao Teorica}{65}{section*.60}%
+\contentsline {subsection}{Os setes ciclos de evolucao documentados (Ciclos 1-7+) demonstram a capacidade de aprendizado e melhoria continua do ecossistema, com scores evoluindo de 85 (Ciclo 1) ate 100 (Ciclo 7+). Esta progressao segue o modelo de maturidade CMMI (Chrissis et al., 2011), onde niveis sucessivos representam aumento de capacidade e previsibilidade do processo.}{67}{section*.61}%
+\contentsline {subsection}{13. Pipeline de Token Efficiency}{67}{section*.62}%
+\contentsline {subsubsection}{13.1 Fluxo de Processamento Linguistico}{67}{section*.63}%
+\contentsline {subsubsection}{13.2 Fundamentacao Teorica}{68}{section*.64}%
+\contentsline {subsection}{A saida final em portugues brasileiro formal, com zero CJK, atende aos requisitos do ecossistema para producao academica Qualis A1, onde o idioma portugues e exigido para publicacoes em periodicos brasileiros de alto impacto.}{70}{section*.65}%
+\contentsline {subsection}{14. Metricas do Ecossistema}{70}{section*.66}%
+\contentsline {subsubsection}{14.1 Tabela de Componentes}{70}{section*.67}%
+\contentsline {subsubsection}{14.2 Health Score}{71}{section*.68}%
+\contentsline {subsubsection}{14.3 Matriz Resumo por Diretorio}{71}{section*.69}%
+\contentsline {subsubsection}{14.4 Fundamentacao Teorica}{72}{section*.70}%
+\contentsline {subsection}{A consistencia de dados entre snapsnots historicos e verificada por comparacao de hashes MD5 (Rivest, 1992), garantindo integridade e reprodutibilidade das medicoes ao longo dos ciclos de evolucao.}{73}{section*.71}%
+\contentsline {subsection}{15. Comandos Rapidos}{73}{section*.72}%
+\contentsline {subsubsection}{15.1 Fundamentacao Teorica}{74}{section*.73}%
+\contentsline {subsection}{O comando /artigo integra o SEEKER (pesquisa) com o Criador Artigo MASWOS (escrita) e manus-evolve (evolucao), implementando o pipeline completo de producao cientifica Qualis A1, desde a revisao de literatura ate a publicacao formatada.}{75}{section*.74}%
+\contentsline {subsection}{16. Consideracoes Finais}{75}{section*.75}%
