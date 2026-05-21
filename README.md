@@ -27,7 +27,7 @@
 
 ---
 
-## Quick Start
+## Início Rápido
 
 1. **Instalar pré-requisitos:** Node.js 25, Bun 1.3, Python 3.12
 2. **Clonar:** `git clone https://github.com/MarceloClaro/OpenCode_Ecosystem.git`
@@ -90,7 +90,7 @@ Composta por **125 agentes especializados**, **40 servidores MCP**, **104 skills
 
 ---
 
-
+## Arquitetura Geral
 
 O ecossistema é estruturado em **6 camadas arquiteturais hierárquicas**, do runtime de infraestrutura até a orquestração meta-granular, com **Injeção de Dependência (DI)** transversal a todas as camadas:
 
@@ -103,8 +103,6 @@ O ecossistema é estruturado em **6 camadas arquiteturais hierárquicas**, do ru
 | **L2** | Dados | SQLite, Mem0, Quantum (81 arqs), DOCLing | Ollama, SQLite |
 | **L1** | Infra | Node.js 25, Bun 1.3, Python 3.12 | Win32 |
 | **DI** | Container | 11 serviços + 3 plugins TS + bridge CommandRegistry | Container, from_container() |
-
----
 
 ---
 
@@ -607,11 +605,11 @@ O OpenCode Ecosystem v4.2.1 documenta sua arquitetura por meio de **7 diagramas 
 | Documento | Descrição |
 |-----------|-----------|
 | [GETTING_STARTED.md](GETTING_STARTED.md) | Guia de instalação e primeiros passos |
-| [TUTORIALS.md](TUTORIALS.md) | Tutoriais práticos detalhados |
-| [GLOSSARY.md](GLOSSARY.md) | Glossário de termos técnicos |
+| [TUTORIALS.md](TUTORIALS.md) | Tutoriais práticos detalhados *(em breve)* |
+| [GLOSSARY.md](GLOSSARY.md) | Glossário de termos técnicos *(em breve)* |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Guia para contribuidores |
 | [ROADMAP.md](ROADMAP.md) | Visão futura do projeto |
-| [AGENTS_PTBR.md](AGENTS_PTBR.md) | Documentação de agentes em PT-BR |
+| [AGENTS_PTBR.md](AGENTS_PTBR.md) | Documentação de agentes em PT-BR *(em breve)* |
 
 ---
 

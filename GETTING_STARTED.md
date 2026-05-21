@@ -120,7 +120,7 @@ Se algum comando retornar erro ou versão inferior à mínima, consulte a seçã
 ```
 
 **O que acontece:**
-1. O comando aciona o **openagent** juntamente com todos os **40 MCPs** disponíveis
+1. O comando aciona o **openagent** juntamente com todos os MCPs disponíveis (40 registrados, 17 ativos)
 2. O sistema opera em modo autônomo, utilizando busca (DuckDuckGo, GitHub, Context7), execução de código, análise de PDF, raciocínio sequencial e memória
 3. Os MCPs inicializam sob demanda (**lazy init**) — apenas os servidores necessários para cada tarefa são carregados na primeira chamada
 
@@ -141,11 +141,11 @@ Se algum comando retornar erro ou versão inferior à mínima, consulte a seçã
 | Documento | Descrição |
 |-----------|-----------|
 | [README.md](README.md) | Documentação técnica completa do ecossistema |
-| [TUTORIALS.md](TUTORIALS.md) | Tutoriais práticos detalhados |
-| [GLOSSARY.md](GLOSSARY.md) | Glossário de termos técnicos |
+| [TUTORIALS.md](TUTORIALS.md) | Tutoriais práticos detalhados *(em breve)* |
+| [GLOSSARY.md](GLOSSARY.md) | Glossário de termos técnicos *(em breve)* |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Guia para contribuidores |
 | [ROADMAP.md](ROADMAP.md) | Visão futura do projeto |
-| [AGENTS_PTBR.md](AGENTS_PTBR.md) | Documentação de agentes em português brasileiro |
+| [AGENTS_PTBR.md](AGENTS_PTBR.md) | Documentação de agentes em português brasileiro *(em breve)* |
 
 ---
 
