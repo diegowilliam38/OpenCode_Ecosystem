@@ -1,4 +1,4 @@
-# Tutoriais — OpenCode Ecosystem v4.6
+# Tutoriais — OpenCode Ecosystem v4.7.1
 
 > Tutoriais práticos com passo-a-passo para as principais funcionalidades do ecossistema.
 
