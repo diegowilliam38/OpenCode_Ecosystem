@@ -12,9 +12,11 @@
 [![Agents](https://img.shields.io/badge/Agents-125-6366f1?style=flat-square)](agents/)
 [![MCPs](https://img.shields.io/badge/MCP_Servers-46-0ea5e9?style=flat-square)](opencode.json)
 [![Skills](https://img.shields.io/badge/Skills-150-10b981?style=flat-square)](skills/)
-[![Tests](https://img.shields.io/badge/Testes-34/34_SWE--Eval-22c55e?style=flat-square)](swe-eval-v1/)
+[![Tests](https://img.shields.io/badge/Testes-49/49_SWE--Eval-22c55e?style=flat-square)](swe-eval-v1/)
 [![CORA-Score](https://img.shields.io/badge/CORA--Score-3.04_M4-e11d48?style=flat-square)](https://github.com/MarceloClaro/CORA-Eval-Dissertacao)
+[![MDE](https://img.shields.io/badge/Motif_Discovery-15/15_TDD-8b5cf6?style=flat-square)](swe-eval-v1/motif_discovery/)
 [![SWE-Score](https://img.shields.io/badge/SWE--Score-v1.0-8b5cf6?style=flat-square)](swe-eval-v1/)
+[![Manifestos](https://img.shields.io/badge/Manifestos-150/150-f59e0b?style=flat-square)](swe-eval-v1/motif_discovery/inventory_auditor.py)
 [![CI/CD](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat-square)](https://github.com/MarceloClaro/Antiprojeto-UFC-PPGTE/actions)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square)](https://github.com/MarceloClaro/Antiprojeto-UFC-PPGTE)
 [![SWOT](https://img.shields.io/badge/SWOT-100/100-f59e0b?style=flat-square)](https://github.com/MarceloClaro/Antiprojeto-UFC-PPGTE)
@@ -44,8 +46,9 @@ Derivado do parecer tecnico sobre os manuscritos "Engenharia de Software com Age
 | L7 | Registry v2.0 (SemVer + SHA256 + assinatura) | 100% | P2 |
 | L8 | EvalLab (t-test + Cohen's d + ANOVA) | 100% | P3 |
 | L9 | CrossPlatformValidator (3 plataformas) | 100% | P3 |
+| **L10** | **Motif Discovery Engine (MDE) — grafo + motivos + inventario** | **100%** | **P2** |
 
-> **TDD:** 34/34 testes passando | **Arquivos:** 30 (specs + codigo + testes) | **Linhas:** ~2.400 Python
+> **TDD:** 49/49 testes passando (34 SWE-EVAL + 15 MDE) | **Arquivos:** 36 (specs + codigo + testes) | **Linhas:** ~2.700 Python
 
 Este projeto e um trabalho em andamento. Muitos componentes estao em estagio experimental e as metricas reportadas sao auto-avaliadas pelo proprio sistema, nao por auditores externos.
 
@@ -129,7 +132,9 @@ dimensoes × 4 niveis (Basico a Pesquisa). Resultados da execucao real:
 | `tests/` | Suite de testes |
 | `opencode.json` | Configuracao principal (46 MCPs, agentes, skills) |
 | `PARECER_TECNICO.md` | **NOVO** — Analise tecnica dos manuscritos fundacionais |
+| `REVOLUCOES.md` | **NOVO** — 11 revolucoes + 18 ciclos de evolucao documentados |
 | `ROADMAP.md` | **Atualizado** — Roadmap com prioridades P0-P3 |
+| `dissertacao/` | **NOVO** — Dissertacao LaTeX ABNT 59p + refs.bib |
 
 ---
 
@@ -138,7 +143,9 @@ dimensoes × 4 niveis (Basico a Pesquisa). Resultados da execucao real:
 | Documento | Conteudo |
 |-----------|----------|
 | [PARECER_TECNICO.md](PARECER_TECNICO.md) | **NOVO** — Analise dos manuscritos "Engenharia de Software com Agentes Inteligentes" e "From Prompt to Process" |
-| [SWE-EVAL v1.0](swe-eval-v1/FRAMEWORK.md) | **NOVO** — Framework de 9 componentes para evolucao do ecossistema |
+| [REVOLUCOES.md](REVOLUCOES.md) | **NOVO** — 11 revolucoes estruturais + 18 ciclos de evolucao |
+| [SWE-EVAL v1.0](swe-eval-v1/FRAMEWORK.md) | **NOVO** — Framework de 9 componentes + MDE + Inventory Auditor |
+| [Dissertacao LaTeX](dissertacao/main.pdf) | **NOVO** — 59 paginas ABNT, 39 refs, 5 fluxogramas |
 | [ENGENHARIA_DE_SOFTWARE.md](docs/ENGENHARIA_DE_SOFTWARE.md) | SDD, TDD, CI/CD, SWEBOK, Git Safety, ADR |
 | [Roadmap](ROADMAP.md) | Planejamento futuro com SWE-EVAL |
 | [Cora-Debate](tdd-docs/CORA_DEBATE.md) | Verificacao simbolica V1-V7 |
