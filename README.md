@@ -154,7 +154,96 @@ dimensoes × 4 niveis (Basico a Pesquisa). Resultados da execucao real:
 
 ---
 
-## Instalacao
+## Comandos do Ecossistema
+
+O OpenCode Ecosystem disponibiliza **27 comandos slash** organizados em 6 categorias. Cada comando dispara um pipeline multi-agente completo.
+
+### Pipeline Principal
+
+| Comando | Funcao | Agentes Envolvidos |
+|---------|--------|-------------------|
+| `/artigo` | Pipeline academico completo (busca → escrita → revisao → PDF) | SEEKER + MASWOS (49 agentes) + Banca (5+4) |
+| `/reversa` | Engenharia reversa: codigo legado → especificacao operacional | Scout + Archaeologist + Architect + Writer + Swarm |
+| `/auto` | Orquestracao autonoma com todos os MCPs ativos | openagent + 46 MCPs |
+| `/evolve` | Pipeline de evolucao: `SENSE→MOTIF→DISCOVER→INSTALL→VERIFY→EVOLVE→LEARN` | autoevolve + skill-sync + self-heal + evolve-state |
+| `/plan` | Planejamento de tarefas com raciocinio sequencial | writing-plans + sequential-thinking MCP |
+| `/quantum` | Computacao quantica (VQC, QML, ZNE/PEC) | quantum-nexus-phd + code-runner + pdf |
+
+### Pesquisa e Conhecimento
+
+| Comando | Funcao |
+|---------|--------|
+| `/research` | Pesquisa academica profunda com validacao cruzada de fontes |
+| `/entity-ner` | Extracao de entidades nomeadas em grafos de conhecimento |
+| `/graphrag` | Consulta ao grafo de conhecimento do ecossistema (GraphRAG) |
+| `/graph-builder` | Construcao de grafo a partir de texto com ontologia |
+| `/hybrid-graph` | Busca hibrida: InsightForge + PanoramaSearch + QuickSearch |
+| `/oasis-profile` | Geracao de personas a partir de entidades do grafo |
+| `/ontology-gen` | Geracao de ontologias para novos dominios de conhecimento |
+
+### Desenvolvimento e Revisao
+
+| Comando | Funcao |
+|---------|--------|
+| `/review` | Revisao de codigo com classificacao de severidade |
+| `/swarm-review` | Revisao por enxame de 3+ agentes (seguranca, performance, arquitetura) |
+| `/synthesize` | Sintese de outputs de multiplos agentes em documento unificado |
+| `/generate-plan` | Geracao de plano de execucao multi-estagio |
+| `/execute` | Execucao de codigo em sandbox isolado |
+| `/ws-review` | Revisao de workspace com metricas de qualidade |
+
+### Infraestrutura
+
+| Comando | Funcao |
+|---------|--------|
+| `/commit` | Commit seguro com verificacao pre-commit (Git Safety) |
+| `/worktree` | Gerenciamento de worktrees isoladas para agentes |
+| `/fileipc` | Comunicacao entre processos via filesystem |
+| `/state` | Gerenciamento de estado da maquina de estados do pipeline |
+| `/devcontainer` | Configuracao de ambiente de desenvolvimento isolado |
+
+### Orquestracao e Relatorios
+
+| Comando | Funcao |
+|---------|--------|
+| `/memory-updater` | Atualizacao de grafo com atividades de agentes em tempo real |
+| `/report-agent` | Geracao de relatorios analiticos com cadeia ReACT |
+| `/ticket` | Criacao e gerenciamento de tickets/issues |
+| `/workspaces` | Gerenciamento de workspaces multiplos |
+
+### Subcomandos do `/evolve`
+
+| Subcomando | Funcao |
+|-----------|--------|
+| `/evolve` | Pipeline completo |
+| `/evolve discover` | Busca novas skills e MCPs |
+| `/evolve install` | Instala descobertas validadas |
+| `/evolve verify` | Verifica saude do ecossistema (TDD + integridade) |
+| `/evolve update` | Atualiza skills, MCPs e dependencias |
+| `/evolve learn` | Analisa padroes e registra licoes aprendidas |
+| `/evolve status` | Status completo do ecossistema (metricas, lacunas, motivos) |
+
+### Exemplos de Uso
+
+```bash
+# Gerar artigo academico completo
+/artigo "agentes inteligentes para engenharia de software"
+
+# Auditar sistema legado
+/reversa --target ./legacy-app --output ./specs/
+
+# Executar evolucao autonoma completa
+/evolve
+
+# Revisar codigo com enxame de agentes
+/swarm-review --files src/*.py
+
+# Construir grafo de conhecimento do projeto
+/graph-builder --source ./docs/ --ontology software-engineering
+
+# Pesquisar com validacao cruzada
+/research "supply chain security AI agents" --sources arxiv,openalex,core
+```
 
 ```bash
 git clone https://github.com/MarceloClaro/OpenCode_Ecosystem.git
